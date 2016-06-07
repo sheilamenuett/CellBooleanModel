@@ -2765,8 +2765,8 @@ def R2_R4_V3(VarName, E_VarName, EN_VarName, Terminal, NumOfTerminal, minX, minY
 									  VarName[x,y,z2,2,mask2,sn]
 									 ),
 								 Implies(E_VarName[x,y,z,0,mask], EN_VarName[x,y,z,0,mask,n]),
-								 Implies(E_VarName[x,y,z,1,mask], EN_VarName[x,y,z,1,mask],n),
-								 Implies(E_VarName[x,y,z,2,mask], EN_VarName[x,y,z,2,mask],n),
+								 Implies(E_VarName[x,y,z,1,mask], EN_VarName[x,y,z,1,mask,n]),
+								 Implies(E_VarName[x,y,z,2,mask], EN_VarName[x,y,z,2,mask,n]),
 								 Implies(E_VarName[x,y,z2,2,mask2], EN_VarName[x,y,z2,2,mask2,n])
 								),
                            ~Or(VarName[x,y,z,0,mask,sn], VarName[x,y,z,1,mask,sn], VarName[x,y,z,2,mask,sn], VarName[x,y,z2,2,mask2,sn])
